@@ -1,0 +1,110 @@
+.header{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem 0 2rem;
+    position: absolute;
+    left: 0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+}
+.header__navbar{
+    visibility: hidden;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    width: 70%;
+    z-index: 100;
+    
+}
+.header__navbar--visible{
+    visibility: visible;
+}
+.header__navbar::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 30px solid var(--white);
+    position:absolute;
+    top: -25px;
+    right: 0;
+}
+
+.header__items{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__item{
+    list-style: none;
+    margin: 2rem 0;
+}
+.header__link{
+    text-decoration: none;
+    color:var(--very-dark-grayish-blue);
+}
+.header__link--important{
+    color: var(--very-dark-desaturated-blue);
+    font-family: 'Fraunces', serif;
+    background-color: var(--yellow);
+    border-radius: 35px;
+    padding: 1.3rem 1.8rem;
+    font-size:1.5rem;
+}
+.header__menu-icon{
+    cursor: pointer;
+}
+
+@media screen and (min-width:1000px) {
+
+    .header__navbar{
+        visibility: visible;
+        position: static;
+        margin:0;
+        background-color: transparent;
+        width: fit-content;
+    }
+    .header__navbar::before{
+        display: none;
+    }
+
+    .header__items{
+        padding: 0rem;
+        display: flex;
+        flex-direction: row;
+        column-gap: 5rem;
+    }
+    .header__item{
+        margin:0;
+    }
+    .header__link{
+        text-decoration: none;
+        color:var(--white);
+    }
+    .header__link--important{
+        color: var(--very-dark-desaturated-blue);
+        background-color: var(--white);
+        transition: all .2s ease;
+    }
+    .header__link--important:hover{
+        background-color: hsla(0, 0%, 100%, 0.418);
+        color: var(--white);
+    }
+   
+    .header__menu-icon{
+        display: none;
+    }
+    
+}
