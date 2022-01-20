@@ -14,7 +14,7 @@
 }
 .about-section__item{
     position: relative;
-    height: 500px;
+ 
 }
 .about-section__item--1{ grid-area: 1 / 1 / 2 / 2; }
 .about-section__item--2 { grid-area: 2 / 1 / 3 / 2; }
@@ -50,6 +50,9 @@
 }
 .item__paragraph--dark-text{
     color:var(--dark-blue);
+}
+.item__paragraph--extra{
+    margin-bottom: 2rem;
 }
 .item__learn-more-link{
     text-decoration: none;
