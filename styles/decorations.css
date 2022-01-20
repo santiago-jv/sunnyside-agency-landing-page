@@ -1,0 +1,26 @@
+.decorations-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+}
+.decorations-section__decoration{
+    width: 100%;
+}
+.decorations-section__decoration--desktop{
+    display: none;
+}
+@media screen and (min-width:768px) {
+    .decorations-section{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr; 
+    }
+    
+
+    .decorations-section__decoration--mobile{
+        display: none;
+    }
+    .decorations-section__decoration--desktop{
+        display: block;
+    }
+}
