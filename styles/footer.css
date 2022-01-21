@@ -1,0 +1,36 @@
+.footer{
+    background-color: var(--dark-moderate-cyan);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    align-items: center;
+    row-gap: 3.5rem;
+}
+.footer__title{
+    color:var(--dark-desaturated-cyan);
+    
+    
+    
+}
+
+.footer__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4rem;
+}
+.footer__item{
+    list-style:none;
+    cursor: pointer;
+}
+.footer__link{
+    color:var(--dark-desaturated-cyan);
+    text-decoration: none;
+}
+.footer__social-networks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    column-gap: 3rem;
+}
